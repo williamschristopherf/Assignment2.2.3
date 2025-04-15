@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Assignment2._2._3
 {
+    //base class can't be instantiated
     abstract class Shape
     {
-        public string id { get; set; }
-        public string name { get; set; }
-        public string color { get; set; }
-        public double num1 { get; set; }
-        public double num2 { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Color { get; set; }
 
-        public virtual double CalculateArea(double num1, double num2)
+        public double CalculateArea(double num1, double num2)
         {
             return num1 * num2;
         }

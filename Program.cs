@@ -21,9 +21,9 @@ else if (userChoice == 's')
     double squareSide1 = Convert.ToDouble(Console.ReadLine());
     Console.WriteLine("Please enter side two of the square: ");
     double squareSide2 = Convert.ToDouble(Console.ReadLine());
-    Square square1 = new Square(squareSide1, squareSide2);
+    Square square1 = new Square(squareSide1);
     Console.WriteLine();
-    Console.WriteLine($"The area of the square is {square1.CalculateArea(squareSide1, squareSide2)}");
+    Console.WriteLine($"The area of the square is {square1.CalculateArea(squareSide1)}");
 }
 else
 {
